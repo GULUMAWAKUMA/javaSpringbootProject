@@ -8,6 +8,6 @@ public class HelloApplication {
 
     @RequestMapping("/")
     public String hello() {
-        return "hello world";
+        return "hello docker world ";
     }
 }
