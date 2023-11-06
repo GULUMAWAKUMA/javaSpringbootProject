@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javaspringboot-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javaspringboot
+  template:
+    metadata:
+      labels:
+        app: javaspringboot
+    spec:
+      containers:
+      - name: javaspringboot
+        image: guluma/javaspringboot
+        ports:
+        - containerPort: 8080
