@@ -15,5 +15,6 @@ spec:
       containers:
       - name: javaspringboot
         image: guluma/javaspringboot
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
